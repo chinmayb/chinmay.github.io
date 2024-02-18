@@ -1,7 +1,11 @@
-remote_theme: pages-themes/minimal@v0.2.0
+#remote_theme: pages-themes/minimal@v0.2.0
+#plugins:
+#- minima
+#jekyll-remote-theme # add this line to the plugins list if you already have one
+theme: minima
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
 
 
-title: Welcom
+title: Welcome
 description: Trying to setup my github page

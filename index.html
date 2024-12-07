@@ -1,2 +1,94 @@
 <html>
+<head>
+    <style>
+        .home-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <section class="hero">
+            <h1>Chinmay Bharadwaj</h1>
+            <p class="subtitle">Software Engineer & Technology Enthusiast</p>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate software engineer focused on building innovative solutions to complex problems. With expertise in modern technologies, I strive to create efficient and scalable applications.</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be added here -->
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <div class="social-links">
+                <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
+                <a href="mailto:{{ site.email }}">Email</a>
+            </div>
+        </section>
+    </div>
+</body>
 </html>

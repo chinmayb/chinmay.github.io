@@ -20,6 +20,74 @@
         .subtitle {
             font-size: 1.5rem;
             color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .hero-links {
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            border: 2px solid #333;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #333;
+            color: white;
+        }
+
+        .posts-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .post-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-title {
+            margin: 0 0 1rem 0;
+        }
+
+        .post-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-excerpt {
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
         }
 
         section {
@@ -67,17 +135,30 @@
         <section class="hero">
             <h1>Chinmay Bharadwaj</h1>
             <p class="subtitle">Software Engineer & Technology Enthusiast</p>
+            <div class="hero-links">
+                <a href="/about" class="button">About Me</a>
+            </div>
         </section>
 
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate software engineer focused on building innovative solutions to complex problems. With expertise in modern technologies, I strive to create efficient and scalable applications.</p>
-        </section>
-
-        <section class="projects" id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Project cards will be added here -->
+        <section class="blog-posts" id="blog">
+            <h2>Thoughts & Musings</h2>
+            <div class="posts-grid">
+                {% for post in site.posts %}
+                <article class="post-card">
+                    <h3 class="post-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    <div class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+                    </div>
+                    <div class="post-excerpt">
+                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                    </div>
+                    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+                </article>
+                {% endfor %}
             </div>
         </section>
 

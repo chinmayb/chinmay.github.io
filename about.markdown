@@ -4,33 +4,131 @@ title: About
 permalink: /about/
 ---
 
-# About Me
+<div class="about-container">
+    <section class="about-intro">
+        <h1>Hello, I'm Chinmay</h1>
+        <p class="intro-text">
+            Software Engineer passionate about building innovative solutions and exploring new technologies.
+        </p>
+    </section>
 
-I'm a Software Engineer with a passion for building innovative solutions and exploring new technologies. My journey in technology has been driven by curiosity and a desire to create meaningful impact through code.
+    <section class="about-skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <!-- Add or modify languages -->
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Technologies</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>AWS</li>
+                    <!-- Add or modify technologies -->
+                </ul>
+            </div>
+        </div>
+    </section>
 
-## Skills & Expertise
+    <section class="about-experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Current Role</h3>
+            <p>Brief description of current role and responsibilities.</p>
+        </div>
+        <!-- Add more experience items as needed -->
+    </section>
+</div>
 
-- **Programming Languages**: [List your primary programming languages]
-- **Web Technologies**: [List relevant web technologies]
-- **Cloud & DevOps**: [List cloud platforms and DevOps tools]
-- **Database Systems**: [List database technologies]
+<style>
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
 
-## Professional Experience
+.about-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
 
-I have experience working on various projects ranging from [brief description of your work experience]. My focus has been on delivering scalable solutions while maintaining code quality and performance.
+.about-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
 
-## Education
+.intro-text {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-[Your educational background]
+section {
+    margin-bottom: 4rem;
+}
 
-## Interests
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #333;
+}
 
-Beyond coding, I'm interested in [your other professional interests or hobbies related to technology].
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
 
-## Get in Touch
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
 
-Feel free to reach out for collaborations or discussions about technology and software development.
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-- GitHub: [@{{ site.github_username }}](https://github.com/{{ site.github_username }})
-- LinkedIn: [Chinmay Bharadwaj](https://linkedin.com/in/{{ site.linkedin_username }})
-- Email: [{{ site.email }}](mailto:{{ site.email }})
+.skill-category li {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+    .about-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

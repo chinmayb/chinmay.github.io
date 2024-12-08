@@ -73,6 +73,74 @@ main {
     padding: 2rem;
 }
 
+/* Home */
+.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(120deg, #2d3748, #4a5568);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 2rem;
+}
+
+.posts {
+    margin-top: 4rem;
+}
+
+.post-preview {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-preview h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.post-preview h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.post-preview h3 a:hover {
+    color: #4a5568;
+}
+
+.post-preview time {
+    display: block;
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.post-preview p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
 /* Typography */
 h1 {
     font-size: 2.5rem;
@@ -92,33 +160,7 @@ h3 {
     margin: 1.5rem 0 0.5rem;
 }
 
-/* Home */
-.hero {
-    text-align: center;
-    margin: 3rem 0;
-}
-
-.hero p {
-    color: #718096;
-    font-size: 1.2rem;
-}
-
-.post-preview {
-    margin: 2rem 0;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e2e8f0;
-}
-
-.post-preview:last-child {
-    border-bottom: none;
-}
-
-.post-preview time {
-    color: #718096;
-    font-size: 0.9rem;
-}
-
-/* About */
+/* About Page */
 .about-container {
     max-width: 800px;
     margin: 0 auto;
@@ -155,8 +197,16 @@ h3 {
         font-size: 2rem;
     }
 
+    .hero h1 {
+        font-size: 2rem;
+    }
+
     .hero p {
         font-size: 1.1rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.3rem;
     }
 
     .skills-grid {

@@ -40,7 +40,7 @@ permalink: /about/
         <h2>Experience</h2>
         <div class="experience-item">
             <h3>Current Role</h3>
-            <p>Brief description of your current role and responsibilities.</p>
+            <p>Brief description of current role and responsibilities.</p>
         </div>
         <!-- Add more experience items as needed -->
     </section>

@@ -19,16 +19,15 @@ permalink: /about/
             <div class="skill-category">
                 <h3>Languages</h3>
                 <ul>
+                    <li>Golang</li>
                     <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h3>Technologies</h3>
                 <ul>
-                    <li>React</li>
-                    <li>Node.js</li>
+                    <li>K8s</li>
+                    <li>Docker</li>
                     <li>AWS</li>
                 </ul>
             </div>

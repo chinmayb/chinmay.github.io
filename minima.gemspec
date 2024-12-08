@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "minima"
   spec.version       = "0.1.0"
   spec.authors       = ["chinmay"]
-  spec.email         = ["cbharadwaj@infoblox.com"]
+  spec.email         = ["acbharadwaj@gmail.com"]
 
   spec.summary       = "Lets start to write a short summary, because Rubygems requires one"
   spec.homepage      = "https://chinmayb.github.io"

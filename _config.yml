@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Bits & Peace-s"
+title: "Bits & Peace"
 author: Chinmaya Bharadwaj
-email: chinmayb@example.com
+email: acbharadwaj@gmail.com
 description: >-
-  Exploring technology, one bit at a time. Software engineering insights, 
-  system design discussions, and tech musings.
+  Exploring technology, life thoughts & learnings one bit at a time. 
 baseurl: ""
 url: ""
 github_username: chinmayb
-linkedin_username: chinmaybharadwaj
+linkedin_username: Chinmaya Bharadwaj
 
 # Build settings
 theme: minima

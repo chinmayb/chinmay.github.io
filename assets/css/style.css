@@ -1,96 +1,165 @@
-/* Global styles */
-:root {
-    --primary-color: #333;
-    --secondary-color: #666;
-    --background-color: #fff;
-    --accent-color: #007bff;
-}
-
+/* Base */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: var(--primary-color);
-    background-color: var(--background-color);
+    color: #2d3748;
     margin: 0;
     padding: 0;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-/* Links */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--primary-color);
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-/* Navigation */
-.site-header {
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.site-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Footer */
-.site-footer {
-    margin-top: 4rem;
-    padding: 2rem 0;
-    border-top: 1px solid #eee;
+/* Header */
+header {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.5rem 1rem;
     text-align: center;
+    background: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 1rem;
-    }
+.site-title {
+    margin-bottom: 1rem;
 }
 
-/* Project Grid */
-.project-grid {
+.site-title a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-decoration: none;
+    background: linear-gradient(120deg, #2d3748, #4a5568);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2d3748;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover:after,
+nav a.active:after {
+    transform: scaleX(1);
+}
+
+nav a.active {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+/* Layout */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* Home */
+.hero {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.hero p {
+    color: #718096;
+    font-size: 1.2rem;
+}
+
+.post-preview {
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-preview time {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* About */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
 
-.project-card {
-    border: 1px solid #eee;
-    border-radius: 8px;
+.skill-category {
     padding: 1.5rem;
-    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
+/* Responsive */
+@media (max-width: 600px) {
+    .site-title a {
+        font-size: 1.5rem;
+    }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+    nav {
+        gap: 1rem;
+    }
 
-.fade-in {
-    animation: fadeIn 1s ease-in;
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }

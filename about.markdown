@@ -8,7 +8,8 @@ permalink: /about/
     <section class="about-intro">
         <h1>Hello, I'm Chinmay</h1>
         <p class="intro-text">
-            Software Engineer passionate about building innovative solutions and exploring new technologies.
+            Software Engineer passionate about building innovative solutions and exploring new technologies. 
+            I love diving deep into complex problems and crafting elegant solutions.
         </p>
     </section>
 
@@ -21,7 +22,6 @@ permalink: /about/
                     <li>Python</li>
                     <li>JavaScript</li>
                     <li>Java</li>
-                    <!-- Add or modify languages -->
                 </ul>
             </div>
             <div class="skill-category">
@@ -30,7 +30,6 @@ permalink: /about/
                     <li>React</li>
                     <li>Node.js</li>
                     <li>AWS</li>
-                    <!-- Add or modify technologies -->
                 </ul>
             </div>
         </div>
@@ -39,10 +38,23 @@ permalink: /about/
     <section class="about-experience">
         <h2>Experience</h2>
         <div class="experience-item">
-            <h3>Current Role</h3>
-            <p>Brief description of current role and responsibilities.</p>
+            <h3>Senior Software Engineer</h3>
+            <p>Currently working on building scalable cloud solutions, focusing on:</p>
+            <ul>
+                <li>Microservices Architecture</li>
+                <li>Cloud Infrastructure</li>
+                <li>System Design</li>
+                <li>Performance Optimization</li>
+            </ul>
         </div>
-        <!-- Add more experience items as needed -->
+    </section>
+
+    <section class="about-interests">
+        <h2>Why This Blog?</h2>
+        <p>Through Bits & Peace, I share my experiences and insights in software engineering. 
+           I believe in the power of knowledge sharing and continuous learning. 
+           Here, you'll find my thoughts on technology, coding practices, and lessons learned 
+           from real-world projects.</p>
     </section>
 </div>
 

@@ -18,13 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Chinmay Bharadwaj
-email: acbharadwaj@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Professional portfolio of Chinmay Bharadwaj - Software Engineer and Technology Enthusiast.
-  Exploring the intersection of technology, innovation, and problem-solving.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://chinmayb.github.io" # the base hostname & protocol for your site
+title: "Bits & Peace-s"
+author: Chinmaya Bharadwaj
+email: chinmayb@example.com
+description: >-
+  Exploring technology, one bit at a time. Software engineering insights, 
+  system design discussions, and tech musings.
+baseurl: ""
+url: ""
 github_username: chinmayb
 linkedin_username: chinmaybharadwaj
 

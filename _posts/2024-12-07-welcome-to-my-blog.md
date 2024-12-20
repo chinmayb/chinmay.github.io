@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Bits & Peace"
-date: 2024-12-07 12:00:00 +0530
+date: 2024-12-05 12:00:00 +0530
 categories: general
 ---
 

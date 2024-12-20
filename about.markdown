@@ -1,15 +1,14 @@
 ---
-layout: page
-title: About
+layout: default
 permalink: /about/
 ---
 
 <div class="about-container">
     <section class="about-intro">
-        <h1>Hello, I'm Chinmay</h1>
+        <h1>Hello, I'm Chinmaya Bharadwaj</h1>
         <p class="intro-text">
             Software Engineer passionate about building innovative solutions and exploring new technologies. 
-            I love diving deep into complex problems and crafting elegant solutions.
+            I love diving deep into problems, understanding how it works and coming up with elegant solutions.
         </p>
     </section>
 
@@ -143,3 +142,4 @@ h3 {
     }
 }
 </style>
+

@@ -47,6 +47,24 @@ permalink: /about/
         </div>
     </section>
 
+    <section class="about-hobbies">
+        <h2>Hobbies & Interests</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <h3>Reading</h3>
+                <p>Exploring new ideas and perspectives through books</p>
+            </div>
+            <div class="hobby-item">
+                <h3>Classical Music</h3>
+                <p>Appreciating anything classical. Carnatic,Jazz,Hindustani</p>
+            </div>
+            <div class="hobby-item">
+                <h3>Chess, Badminton</h3>
+                <p>Mental and Physical activity</p>
+            </div>
+        </div>
+    </section>
+
     <section class="about-interests">
         <h2>Why This Blog?</h2>
         <p>Through Bits & Peace, I share my experiences and insights in software engineering. 
@@ -140,6 +158,32 @@ h3 {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.hobby-item {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-3px);
+}
+
+.hobby-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.hobby-item p {
+    color: #666;
+    font-size: 0.95rem;
 }
 </style>
 

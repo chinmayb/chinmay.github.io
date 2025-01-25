@@ -3,22 +3,24 @@ layout: post
 title: "OOM Killer"
 date: 2025-01-25 12:00:00 +0530
 categories: general
-label: [OS, learning, OOMKill]
+tag: [OS, learning, OOMKill]
 ---
 
 ## Linux OOM Killer
 
-The kernel has a mechanism called oomkiller (out-of-memory killer) to allows killing a single process. killer is summoned when the system runs short of free memory and is unable to proceed without killing one or more processes. [Kernel Doc](https://www.kernel.org/doc/gorman/html/understand/understand016.html)
+The kernel has a mechanism called oomkiller (out-of-memory killer) to allow killing a single process. Killer is summoned when the system runs short of free memory and is unable to proceed without killing one or more processes. [Kernel Doc](https://www.kernel.org/doc/gorman/html/understand/understand016.html) Modern systems allow overcommit, meaning kernel allows more memory to a process that it can gurantee. When many of the process consume the overcommitted memory, kernel can either panic or start killing some of its childen. A Real word example to understand this, flights do [overbooking](https://www.britannica.com/story/why-do-airlines-overbook-seats-on-flights). Here they dont kill the passengers, instead they offer better deals to the passengers who are willing to opt out.
 
 This can be controlled by the flag called `/proc/sys/vm/panic_on_oom`. Set it to 1, the kernel will panic instead of killing the process. Otherwise, it will call the OOM killer(default).
 
-So for every PID there's a score maintained. 
+So for every PID there's a score maintained for "fair" termination of the processes.
   
 * `/proc/[pid]/oom_score`
   
-   view the OOM-killer score. A higher score means that the process is more likely to be selected by the OOM-killer.
+   View the OOM-killer score of your process. A higher score means that the process is more likely to be selected by the OOM-killer.
    e.g
-    ```console
+
+    
+    ```shell
 	root@raspberrypi:/home/pi# cat /proc/3202/oom_score
 	668
     ```
@@ -33,7 +35,7 @@ Processes which have been running a long time are unlikely to be the cause of me
 
 
 OOM badness calculation algorigthm was heavily debated. In the begining, it was not considering namespaces. Lets say, When user A runs a large process & B runs 100 small processes, it'd target the userA's process, even if B is using far more.
-So for environments where the processes are grouped into cgroups, they introduced control-group aware OOM killers to solve this problem.
+So for environments where the processes are grouped into [cgroups](https://man7.org/linux/man-pages/man7/cgroups.7.html), they introduced control-group aware OOM killers to solve this problem.
 
 - Find the largest memory consuming cgroup
 

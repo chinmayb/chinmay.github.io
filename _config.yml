@@ -32,6 +32,7 @@ linkedin_username: Chinmaya Bharadwaj
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +53,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Enable tag collections
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/

@@ -3,6 +3,7 @@ layout: post
 title: "Reflection"
 date: 2024-12-07 12:00:00 +0530
 categories: general
+tags: [thoughts]
 ---
 
 ### Reflection
